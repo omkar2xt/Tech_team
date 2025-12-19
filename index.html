@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Team Work Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">🚀 Tech Team Daily Work Log</h1>
+
+    <form id="workForm" class="card fade-in">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="role" placeholder="Role" required>
+        <input type="date" id="date" required>
+        <input type="text" value="2 Hours" disabled>
+
+        <textarea id="tasks" placeholder="Tasks Performed" required></textarea>
+        <textarea id="tools" placeholder="Tools Used" required></textarea>
+        <textarea id="issues" placeholder="Issues (if any)"></textarea>
+
+        <button type="submit">Submit Work</button>
+    </form>
+
+    <div class="card slide-up">
+        <h2> Team Records</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Date</th>
+                    <th>Tasks</th>
+                    <th>Tools</th>
+                    <th>Issues</th>
+                </tr>
+            </thead>
+            <tbody id="records"></tbody>
+        </table>
+    </div>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
